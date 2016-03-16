@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./turbo.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- START cut here if embedding to wordpress" -->
+<!-- Uncomment this line <link rel="stylesheet" href="./turbo.css"> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/0.2.35/clappr.min.js"> </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.rtmp/0.0.12/rtmp.min.js"></script>
+
+    <div class="overworld" id="overworld">
+        <div id="turboplayer_wrapper" class="turboplayer_wrapper" onmouseover="fadeIn();" onmouseout="fadeOut();">
+            <div class="turboplayer" id=turboplayer></div>
+            <div class="turboplayer_controls_wrapper" id="turboplayer_controls_wrapper">
+            <button id="turboplayer_fill_btn" class="turboplayer_fill_btn" onClick="playerFill();">Fill</button>
+            <select id="vsources" class="vsources" onchange="chooseServer();"></select>
+        </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./turbo.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<!-- END cut here if embedding to wordpress" -->
+</body>
+</html>
