@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #050;
     padding: 0;
     margin: 2em;
 }
@@ -39,19 +39,38 @@ body {
     border: 1px solid white;
 }
 
-.vsources {
+#vsources {
     position: absolute;
     background-color: transparent;
     border: none;
     color: #BBB;
     font-size: 1em;
-    top: 2px;
+    top: 0px;
     left: 50px;
     z-index: 100002;
+    padding: 0;
+    margin: 0;
 }
 
-.vsources option {
-    color: #000;
+#vsources:hover .vsrc_item {
+    display: block;
+}
+
+.vsrc_item {
+    display: none;
+    color: #FFF;
+    padding: 5px;
+}
+
+.vsrc_item:hover {
+    background-color: #CCC;
+    color: #555;
+    cursor: pointer;
+}
+
+#vsrc_selected {
+    background-color: transparent;
+    padding: 5px;
 }
 
 .turboplayer {
